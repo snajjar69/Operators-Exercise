@@ -10,8 +10,7 @@
         {
             Console.WriteLine("What is the radius of your circle?");
             double radius = double.Parse(Console.ReadLine());
-            Console.WriteLine($"This area of a circle with a radius of {radius}");
-            
+            Console.WriteLine($"This area of a circle with a radius of {radius} is {Math.Round(AreaOfCircle(radius), 2)}");
         }
         
         static void Main(string[] args)
@@ -31,7 +30,16 @@
           
             
             //AreaOfCirle
-           
+            PrintAreaOfCircle();
+            
+            // var is implicit type inferrence (more on this later)
+            var i = 3;
+            var j = 4;
+            var k = ++i * j++;
+
+            Console.WriteLine(k); // ouputs ?
+            
+
         }
     }
 }
